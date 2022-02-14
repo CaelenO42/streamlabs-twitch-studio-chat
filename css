@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  color: black;
+}
+
+body {
+  background: {background_color};
+  font-size: {font_size};
+  color: {text_color};
+  font-family: 'Inter', sans-serif;
+}
+
+#log>div {
+    animation: fadeUp 1s ease forwards, fadeOut 0.5s ease {message_hide_delay} forwards;
+    -webkit-animation: fadeUp 1s ease forwards, fadeOut 0.5s ease {message_hide_delay} forwards;
+  position: relative;
+}
+
+div.message_box {
+  margin: 10px;
+  padding: 15px;
+  background-color: white;
+  width: auto;
+  display: table;
+  border-radius: 15px;
+  color: black;
+}
+
+.badge {
+    display: inline-block;
+    margin-right: 0.2em;
+    position: relative;
+    height: 1em;
+    vertical-align: middle;
+    top: -0.1em;
+}
+
+@keyframes fadeUp {
+  from {top: 200px;}
+  to {top: 0px;}
+}
+
+#log>div.deleted {
+    visibility: hidden;
+}
+
+#log {
+    display: table;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 10px 10px;
+    table-layout: fixed;
+  flex-direction: column;
+}
+
+#log .emote {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 0.4em 0.2em;
+    position: relative;
+}
+
+#log .emote img {
+    display: inline-block;
+    height: 1em;
+    opacity: 0;
+}
+
+/* Popout code*/
+.popout {
+        animation: popout 1s ease;
+        -webkit-animation: popout 1s ease;
+    }
+    @keyframes popout {
+        from{transform:scale(0)}
+        80%{transform:scale(1.2)}
+        to{transform:scale(1)}
+    }
+    @-webkit-keyframes popout {
+        from{-webkit-transform:scale(0)}
+        80%{-webkit-transform:scale(1.2)}
+        to{-webkit-transform:scale(1)}
+    }
