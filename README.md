@@ -20,4 +20,4 @@ Twitch Studio has a built in Chatbox that has a really nice styling to it, but i
 
 ## Credits
 
-If you like that feel free to check out some of my other stuff on my [GitHub](https://github.com/CaelenO42) or my [Website](https://CaelenO42.github.io)! Happy Styling!
+If you like this feel free to check out some of the other stuff on my [GitHub](https://github.com/CaelenO42) or go visit my [Website](https://CaelenO42.github.io)! Happy Styling!
